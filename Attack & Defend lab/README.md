@@ -51,11 +51,14 @@ This Lab utilizes Virtual Box as our hypervisor
 * Ensure you choose the option have a local account
 <img width="583" height="402" alt="image" src="https://github.com/user-attachments/assets/d2d8fb8d-7e89-4e7c-bf29-aefc123c3bce" />
 * For the security questions, I submitted dummy answers, and disabled the privacy settings
-* <img width="1022" height="668" alt="image" src="https://github.com/user-attachments/assets/2ec45967-5727-4a32-966e-bb32b03f3459" />
-
-
-
+<img width="1022" height="668" alt="image" src="https://github.com/user-attachments/assets/2ec45967-5727-4a32-966e-bb32b03f3459" />
 * A successful installation of the Windows VM should look like this:
+<img width="1023" height="776" alt="image" src="https://github.com/user-attachments/assets/1443a081-ed7c-427c-aaf7-ca7b8d21ab3f" />
+* Now that we have successfully configure the Windows VM, we can now configure Splunk and Sysmon
+* Most importantly, I've taken a snapshot to revert back to if something goes wrong
+<img width="1512" height="140" alt="image" src="https://github.com/user-attachments/assets/ebce9f6d-a2fe-435d-a33d-7e16e41c526e" />
+
+
   
 # Configuring the attacker machine
 * I retrieved the ISO for the Kali machine by visiting the installer images [page](https://www.kali.org/get-kali/#kali-installer-images)

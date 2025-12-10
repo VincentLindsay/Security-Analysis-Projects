@@ -38,18 +38,17 @@ This Lab utilizes Virtual Box as our hypervisor
 <img width="1736" height="407" alt="image" src="https://github.com/user-attachments/assets/1e834947-aed4-4c1b-8a60-3508a19d9c5f" />
 
 * I've allocated 4 GB of RAM, as well as 50 GB of space for the VM
-<img width="1740" height="370" alt="image" src="https://github.com/user-attachments/assets/e5f36f87-620d-4636-b9f1-aae763418a30" />
-
+  <img width="1740" height="370" alt="image" src="https://github.com/user-attachments/assets/e5f36f87-620d-4636-b9f1-aae763418a30" />
 * When setting up the Windows machine, ensure that the option for I don't have a product key is selected
-<img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/a9f2f0ef-4c41-4657-814c-95e8096853ca" />
-
+  <img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/a9f2f0ef-4c41-4657-814c-95e8096853ca" />
 * Choose the option for Windows 10 Pro
-<img width="633" height="476" alt="image" src="https://github.com/user-attachments/assets/b8dda7fa-597a-4780-8efc-fd117dc50161" />
-
+  <img width="633" height="476" alt="image" src="https://github.com/user-attachments/assets/b8dda7fa-597a-4780-8efc-fd117dc50161" />
 * Choose the custom installation option, and begin the installation:
-<img width="632" height="471" alt="image" src="https://github.com/user-attachments/assets/a3a9e13b-a2a6-441a-bdd9-376e9499da49" />
-* Ensure you choose the option have a local account
+<img width="632" height="471" alt="image" src="https://github.com/user-attachments/assets/a3a9e13b-a2a6-441a-bdd9-376e9499da490" />
+*Ensure you choose the option have a local account
+
 <img width="583" height="402" alt="image" src="https://github.com/user-attachments/assets/d2d8fb8d-7e89-4e7c-bf29-aefc123c3bce" />
+
 * For the security questions, I submitted dummy answers, and disabled the privacy settings
 <img width="1022" height="668" alt="image" src="https://github.com/user-attachments/assets/2ec45967-5727-4a32-966e-bb32b03f3459" />
 * A successful installation of the Windows VM should look like this:
@@ -72,6 +71,9 @@ This Lab utilizes Virtual Box as our hypervisor
   <img width="798" height="598" alt="image" src="https://github.com/user-attachments/assets/78b0b7aa-5a6f-4ca5-b7ab-0eb3ad5fe961" />
 * Keep all files in one partition and choose the default software selection
   <img width="797" height="603" alt="image" src="https://github.com/user-attachments/assets/ab9344da-98d3-4f2f-bfbb-3668995af604" />
+* Install GRUB, and have it set to the /dev/sda directory
+  <img width="801" height="527" alt="image" src="https://github.com/user-attachments/assets/0a4223e6-4d17-4299-a152-14a0185fb6e5" />
+
 
 
 

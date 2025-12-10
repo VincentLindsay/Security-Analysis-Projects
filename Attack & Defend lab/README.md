@@ -37,7 +37,7 @@ This Lab utilizes Virtual Box as our hypervisor
 * Note: I skipped the unattended installation
 <img width="1736" height="407" alt="image" src="https://github.com/user-attachments/assets/1e834947-aed4-4c1b-8a60-3508a19d9c5f" />
 
-* I've allocated 4 GB of RAM, as well as 50.00 GB of space for the VM
+* I've allocated 4 GB of RAM, as well as 50 GB of space for the VM
 <img width="1740" height="370" alt="image" src="https://github.com/user-attachments/assets/e5f36f87-620d-4636-b9f1-aae763418a30" />
 
 * When setting up the Windows machine, ensure that the option for I don't have a product key is selected
@@ -54,6 +54,13 @@ This Lab utilizes Virtual Box as our hypervisor
 # Configuring the attacker machine
 * I retrieved the ISO for the Kali machine by visiting the installer images [page](https://www.kali.org/get-kali/#kali-installer-images)
 * I chose the ISO image instead of a pre-built to have more control of the installation and configuration process
+* Like the Windows machine setup, I skipped the unattended installation
+<img width="1740" height="406" alt="image" src="https://github.com/user-attachments/assets/c2d4de9c-62c6-4c09-8e62-64051c6b6e79" />
+
+* I also allocated 2 GB of RAM, as well as 80 GB for the storage space for the Kali VM
+<img width="1743" height="357" alt="image" src="https://github.com/user-attachments/assets/57a30ef7-35f2-4f18-9127-e6d85f2ec858" />
+
+
   
 # Implementing Splunk
 # Configuring Sysmon

@@ -43,12 +43,10 @@ This Lab utilizes Virtual Box as our hypervisor
   <img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/a9f2f0ef-4c41-4657-814c-95e8096853ca" />
 * Choose the option for Windows 10 Pro
 <img width="633" height="476" alt="image" src="https://github.com/user-attachments/assets/b8dda7fa-597a-4780-8efc-fd117dc50161" />
-*  Choose the custom installation option, and begin the installation:
+* Choose the custom installation option, and begin the installation:
 <img width="632" height="471" alt="image" src="https://github.com/user-attachments/assets/a3a9e13b-a2a6-441a-bdd9-376e9499da490" />
-*Ensure you choose the option have a local account
-
+* Ensure you choose the option have a local account
 <img width="583" height="402" alt="image" src="https://github.com/user-attachments/assets/d2d8fb8d-7e89-4e7c-bf29-aefc123c3bce" />
-
 * For the security questions, I submitted dummy answers, and disabled the privacy settings
 <img width="1022" height="668" alt="image" src="https://github.com/user-attachments/assets/2ec45967-5727-4a32-966e-bb32b03f3459" />
 * A successful installation of the Windows VM should look like this:

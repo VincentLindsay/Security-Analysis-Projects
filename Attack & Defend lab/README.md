@@ -3,7 +3,7 @@ This Homelab simulates an attacker and defender scenario which features a Kali L
 The Windows 10 machine utilizes Splunk to ingest logs to identify malicious traffic by the Kali machine, as well as Sysmon
 
 # Table of Contents
-- [Setting up VirtualBox](Setting-up-VirtualBox)
+- [Setting up VirtualBox](https://github.com/VincentLindsay/Security-Analysis-Projects/tree/main/Attack%20%26%20Defend%20lab#setting-up-virtualbox)
 - [Configuring the Windows machine](Configuring-the-Windows-machine)
 
 

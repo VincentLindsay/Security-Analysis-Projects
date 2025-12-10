@@ -59,6 +59,18 @@ This Lab utilizes Virtual Box as our hypervisor
 
 * I also allocated 2 GB of RAM, as well as 80 GB for the storage space for the Kali VM
 <img width="1743" height="357" alt="image" src="https://github.com/user-attachments/assets/57a30ef7-35f2-4f18-9127-e6d85f2ec858" />
+* When booting the Kali machine, choose the graphical installation
+* I chose the default hostname
+<img width="791" height="387" alt="image" src="https://github.com/user-attachments/assets/a0bbe4c5-33c1-44ff-a24a-38c884aa1fdf" />
+* Choose the credentials you want
+* Use the Guided Partition to use the entire disk
+<img width="798" height="598" alt="image" src="https://github.com/user-attachments/assets/78b0b7aa-5a6f-4ca5-b7ab-0eb3ad5fe961" />
+* Keep all files in one partition
+* Choose the default software selection
+  <img width="797" height="603" alt="image" src="https://github.com/user-attachments/assets/ab9344da-98d3-4f2f-bfbb-3668995af604" />
+
+
+
 
 
   

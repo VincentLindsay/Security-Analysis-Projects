@@ -48,6 +48,12 @@ This Lab utilizes Virtual Box as our hypervisor
 
 * Choose the custom installation option, and begin the installation:
 <img width="632" height="471" alt="image" src="https://github.com/user-attachments/assets/a3a9e13b-a2a6-441a-bdd9-376e9499da49" />
+* Ensure you choose the option have a local account
+<img width="583" height="402" alt="image" src="https://github.com/user-attachments/assets/d2d8fb8d-7e89-4e7c-bf29-aefc123c3bce" />
+* For the security questions, I submitted dummy answers, and disabled the privacy settings
+* <img width="1022" height="668" alt="image" src="https://github.com/user-attachments/assets/2ec45967-5727-4a32-966e-bb32b03f3459" />
+
+
 
 * A successful installation of the Windows VM should look like this:
   
@@ -55,18 +61,13 @@ This Lab utilizes Virtual Box as our hypervisor
 * I retrieved the ISO for the Kali machine by visiting the installer images [page](https://www.kali.org/get-kali/#kali-installer-images)
 * I chose the ISO image instead of a pre-built to have more control of the installation and configuration process
 * Like the Windows machine setup, I skipped the unattended installation
-<img width="1740" height="406" alt="image" src="https://github.com/user-attachments/assets/c2d4de9c-62c6-4c09-8e62-64051c6b6e79" />
-
+  <img width="1740" height="406" alt="image" src="https://github.com/user-attachments/assets/c2d4de9c-62c6-4c09-8e62-64051c6b6e79" />
 * I also allocated 2 GB of RAM, as well as 80 GB for the storage space for the Kali VM
-<img width="1743" height="357" alt="image" src="https://github.com/user-attachments/assets/57a30ef7-35f2-4f18-9127-e6d85f2ec858" />
-* When booting the Kali machine, choose the graphical installation
-* I chose the default hostname
-<img width="791" height="387" alt="image" src="https://github.com/user-attachments/assets/a0bbe4c5-33c1-44ff-a24a-38c884aa1fdf" />
-* Choose the credentials you want
-* Use the Guided Partition to use the entire disk
-<img width="798" height="598" alt="image" src="https://github.com/user-attachments/assets/78b0b7aa-5a6f-4ca5-b7ab-0eb3ad5fe961" />
-* Keep all files in one partition
-* Choose the default software selection
+  <img width="1743" height="357" alt="image" src="https://github.com/user-attachments/assets/57a30ef7-35f2-4f18-9127-e6d85f2ec858" />
+* When booting the Kali machine, choose the graphical installation. I also chose the default hostname of kali
+* Choose the credentials you want and use the Guided Partition to use the entire disk
+  <img width="798" height="598" alt="image" src="https://github.com/user-attachments/assets/78b0b7aa-5a6f-4ca5-b7ab-0eb3ad5fe961" />
+* Keep all files in one partition and choose the default software selection
   <img width="797" height="603" alt="image" src="https://github.com/user-attachments/assets/ab9344da-98d3-4f2f-bfbb-3668995af604" />
 
 

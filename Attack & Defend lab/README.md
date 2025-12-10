@@ -5,6 +5,7 @@ The Windows 10 machine utilizes Splunk to ingest logs to identify malicious traf
 # Table of Contents
 - [Setting up VirtualBox](#Setting-up-VirtualBox)
 - [Configuring the Windows machine](#Configuring-the-Windows-machine)
+- [Configuring the attacker machine](#Configuring-the-attacker-machine)
 
 
 

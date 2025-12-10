@@ -42,8 +42,8 @@ This Lab utilizes Virtual Box as our hypervisor
 * When setting up the Windows machine, ensure that the option for I don't have a product key is selected
   <img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/a9f2f0ef-4c41-4657-814c-95e8096853ca" />
 * Choose the option for Windows 10 Pro
-  <img width="633" height="476" alt="image" src="https://github.com/user-attachments/assets/b8dda7fa-597a-4780-8efc-fd117dc50161" />
-* Choose the custom installation option, and begin the installation:
+<img width="633" height="476" alt="image" src="https://github.com/user-attachments/assets/b8dda7fa-597a-4780-8efc-fd117dc50161" />
+*  Choose the custom installation option, and begin the installation:
 <img width="632" height="471" alt="image" src="https://github.com/user-attachments/assets/a3a9e13b-a2a6-441a-bdd9-376e9499da490" />
 *Ensure you choose the option have a local account
 
@@ -55,7 +55,7 @@ This Lab utilizes Virtual Box as our hypervisor
 <img width="1023" height="776" alt="image" src="https://github.com/user-attachments/assets/1443a081-ed7c-427c-aaf7-ca7b8d21ab3f" />
 * Now that we have successfully configure the Windows VM, we can now configure Splunk and Sysmon
 * Most importantly, I've taken a snapshot to revert back to if something goes wrong
-<img width="1512" height="140" alt="image" src="https://github.com/user-attachments/assets/ebce9f6d-a2fe-435d-a33d-7e16e41c526e" />
+  <img width="1512" height="140" alt="image" src="https://github.com/user-attachments/assets/ebce9f6d-a2fe-435d-a33d-7e16e41c526e" />
 
 
   

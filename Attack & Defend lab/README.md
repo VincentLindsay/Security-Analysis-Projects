@@ -32,6 +32,28 @@ This Lab utilizes Virtual Box as our hypervisor
 * With these settings, choose the option to create an ISO image to be used in VirtualBox
 <img width="788" height="351" alt="image" src="https://github.com/user-attachments/assets/6e8707c4-db68-40bb-8b92-0cbed2da7ced" />
 
+* Now we are able to add the ISO to VirtualBox and create our Windows 10 client, I chose a generic name for our Business User
+* Note: I skipped the unattended installation
+<img width="1736" height="407" alt="image" src="https://github.com/user-attachments/assets/1e834947-aed4-4c1b-8a60-3508a19d9c5f" />
+
+* I've allocated 4 GB of RAM, as well as 50.00 GB of space for the VM
+<img width="1740" height="370" alt="image" src="https://github.com/user-attachments/assets/e5f36f87-620d-4636-b9f1-aae763418a30" />
+
+* When setting up the Windows machine, ensure that the option for I don't have a product key is selected
+<img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/a9f2f0ef-4c41-4657-814c-95e8096853ca" />
+
+* Choose the option for Windows 10 Pro
+<img width="633" height="476" alt="image" src="https://github.com/user-attachments/assets/b8dda7fa-597a-4780-8efc-fd117dc50161" />
+
+* Choose the custom installation option, and begin the installation:
+<img width="632" height="471" alt="image" src="https://github.com/user-attachments/assets/a3a9e13b-a2a6-441a-bdd9-376e9499da49" />
+
+* A successful installation of the Windows VM should look like this:
+  
+# Configuring the attacker machine
+* I retrieved the ISO for the Kali machine by visiting the installer images [page](https://www.kali.org/get-kali/#kali-installer-images)
+* I chose the ISO image instead of a pre-built to have more control of the installation and configuration process
+  
 # Implementing Splunk
 # Configuring Sysmon
 

@@ -95,10 +95,11 @@ Now that we have successfully configure the Windows VM, we can now configure Spl
 
 
 # Configuring Sysmon
-* To install Sysmon, we will navigate to the Sysmon installation (page)[https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon] on Microsoft's System Internals
+* To install Sysmon, we will navigate to the Sysmon installation on Microsoft's System Internals (page)[https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon] 
 * Once installed, extract the .Zip file, and they should look like this:
- <img width="847" height="175" alt="image" src="https://github.com/user-attachments/assets/afbac984-893f-4c8c-8e6f-b546faa24ad3" />
-* We will utilize the popular olaf configuration [settings](https://github.com/olafhartong/sysmon-modular/blob/master/sysmonconfig.xml)
+<img width="847" height="175" alt="image" src="https://github.com/user-attachments/assets/afbac984-893f-4c8c-8e6f-b546faa24ad3" />
+
+* We will utilize the popular olaf configuration [settings][https://github.com/olafhartong/sysmon-modular/blob/master/sysmonconfig.xml]
 * On the github page, navigate towards the sysmonconfig.xml file
 * Click the raw option and save the file to the folder that Sysmon belongs to
 * Open a PowerShell window as Administrator

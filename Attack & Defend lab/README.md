@@ -85,8 +85,12 @@ Now that we have successfully configure the Windows VM, we can now configure Spl
 * Download splunk based on your VM's operating system, and agree to the EULA
 * I chose the default configuration settings for splunk
 <img width="487" height="382" alt="image" src="https://github.com/user-attachments/assets/215dbd11-1f7b-45c5-8dee-941d346f696f" />
+
 * Create account credentials for the splunk local administrator account
-* After this, splunk can begin to install
+
+* After this, splunk can begin to install, and you should get this page once Splunk is installed
+<img width="492" height="385" alt="image" src="https://github.com/user-attachments/assets/6cd2ef2c-2353-4cc7-8006-363ce447f58b" />
+
 
 # Configuring Sysmon
 * To install Sysmon, we will navigate to the Sysmon installation (page)[https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon] on Microsoft's System Internals

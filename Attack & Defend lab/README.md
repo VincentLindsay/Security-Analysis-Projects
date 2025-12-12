@@ -92,6 +92,20 @@ Now that we have successfully configure the Windows VM, we can now configure Spl
 
 * After this, splunk can begin to install, and you should get this page once Splunk is installed
 <img width="492" height="385" alt="image" src="https://github.com/user-attachments/assets/6cd2ef2c-2353-4cc7-8006-363ce447f58b" />
+* Once installed, you can login to Splunk using the credentials you entered when installing Splunk
+* Since we will be using Sysmon, we can also download the Splunk for Sysmon application on the Splunk dashboard
+ <img width="965" height="625" alt="image" src="https://github.com/user-attachments/assets/108953b7-be4c-461b-bd48-d7f7fbe8cefa" />
+* To properly configure our machine to send logs to splunk, we must implement configuration settings
+* You will need to modify the local configuration file, which is located on a fresh in stall in the directory: C:\Program Files\Splunk\etc\system\default\inputs.conf
+* I copied and pasted the file onto the C:\Program Files\Splunk\etc\system\local directory
+<img width="711" height="226" alt="image" src="https://github.com/user-attachments/assets/2ed4718f-50bd-4074-8dca-98f75f320cdd" />
+* I Utilized MyDFIR's guide on how to create the additional configurations for (sysmon)[https://www.youtube.com/watch?v=-8X7Ay4YCoA&t=757s]
+* Here is an example of some of the configuration settings:
+<img width="651" height="533" alt="image" src="https://github.com/user-attachments/assets/33eec338-1eb8-449a-a2dd-5f5a933af191" />
+
+
+
+
 
 
 # Configuring Sysmon

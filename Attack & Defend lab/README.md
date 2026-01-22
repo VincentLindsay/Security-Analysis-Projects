@@ -28,15 +28,17 @@ This Lab utilizes Virtual Box as our hypervisor
 * There is a work-around where you can have the media creation tool generate an ISO for a Windows 10 enterprise machine, to do this you can perform the following:
   
 * You will download the medial creation tool for Windows [10](https://www.microsoft.com/en-us/software-download/windows10)
-* For the work-around, I found a method on [youtube](https://www.youtube.com/watch?v=DR_75hjFFas), credit goes to [TimsComputerRepair](https://www.youtube.com/@TimsComputerRepair)
+* For the work-around, I found a method on [youtube](https://www.youtube.com/watch?v=DR_75hjFFas),credit goes to [TimsComputerRepair](https://www.youtube.com/@TimsComputerRepair)
 * Now, the work-around involves the use of a powershell script in the same directory as the windows 10 media creation tool:
 
 ```Bash
 .\MediaCreationTool_22H2.exe /Eula Accept /Retail /MediaArch x64 /MediaLangCode en-US /MediaEdition Enterprise
 ```
 Note: in the video, the edition of the Media Creation Tool is different, you can simply change the verion (e.g 22H2), and the script will execute
+
 In powershell as Administrator, navigate to the directory using the **cd** command in which you downloaded the media creation tool in
 <img width="962" height="263" alt="image" src="https://github.com/user-attachments/assets/242bf9ed-6c91-4006-ae91-f5676c35d159" />
+
 I can now use the script listed above to achieve the ability to retrieve an enterprise ISO
 
 Next, the Windows 10 Setup will now ask for a Product key, you can enter a generic key found on ten [forums](https://www.tenforums.com/tutorials/95922-generic-product-keys-install-windows-10-editions.html)
@@ -50,12 +52,11 @@ Once you enter the generic retail key, you can create an ISO file
 Here is a screenshot that demonstrates the successful creation of a Windows 10 ISO for our machine
 
 Now we are able to add the ISO to VirtualBox and create our Windows 10 client, I chose a generic name for our Business User
- Note: I skipped the unattended installation
+Note: I skipped the unattended installation
 <img width="1736" height="407" alt="image" src="https://github.com/user-attachments/assets/1e834947-aed4-4c1b-8a60-3508a19d9c5f" />
 
  I've pre-allocated 4 GB of RAM, as well as 150 GB of space for the VM
- When setting up the Windows machine, ensure that the option for I don't have a product key is selected
-<img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/a9f2f0ef-4c41-4657-814c-95e8096853ca" />
+
 
   Choose the custom installation option, and begin the installation
   <img width="633" height="476" alt="image" src="https://github.com/user-attachments/assets/b8dda7fa-597a-4780-8efc-fd117dc50161" />

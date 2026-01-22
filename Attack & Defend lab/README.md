@@ -41,17 +41,19 @@ I can now use the script listed above to achieve the ability to retrieve an ente
 
 Next, the Windows 10 Setup will now ask for a Product key, you can enter a generic key found on ten [forums](https://www.tenforums.com/tutorials/95922-generic-product-keys-install-windows-10-editions.html)
 <img width="790" height="696" alt="image" src="https://github.com/user-attachments/assets/ac06638b-88de-4122-b98e-5ec3c9912d7f" />
+
 All the product key does is allow you to use the edition
 
-With these settings, choose the option to create an ISO image to be used in VirtualBox
-<img width="788" height="351" alt="image" src="https://github.com/user-attachments/assets/6e8707c4-db68-40bb-8b92-0cbed2da7ced" />
+Once you enter the generic retail key, you can create an ISO file
+<img width="776" height="697" alt="image" src="https://github.com/user-attachments/assets/fef58071-5641-4ffb-b8ce-f9caf7fc0940" />
 
- Now we are able to add the ISO to VirtualBox and create our Windows 10 client, I chose a generic name for our Business User
+Here is a screenshot that demonstrates the successful creation of a Windows 10 ISO for our machine
+
+Now we are able to add the ISO to VirtualBox and create our Windows 10 client, I chose a generic name for our Business User
  Note: I skipped the unattended installation
 <img width="1736" height="407" alt="image" src="https://github.com/user-attachments/assets/1e834947-aed4-4c1b-8a60-3508a19d9c5f" />
 
- I've allocated 4 GB of RAM, as well as 50 GB of space for the VM
-  <img width="1740" height="370" alt="image" src="https://github.com/user-attachments/assets/e5f36f87-620d-4636-b9f1-aae763418a30" />
+ I've pre-allocated 4 GB of RAM, as well as 150 GB of space for the VM
  When setting up the Windows machine, ensure that the option for I don't have a product key is selected
 <img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/a9f2f0ef-4c41-4657-814c-95e8096853ca" />
 

@@ -1,11 +1,11 @@
 # Overview
-This Homelab simulates an attacker and defender scenario which features a Kali Linux and a Windows 10 virtual machine. 
-The Windows 10 machine utilizes Splunk to ingest logs to identify malicious traffic by the Kali machine, as well as Sysmon
+This Homelab simulates an attacker and defender scenario which features a Kali Linux and a Windows 10 Enterprise virtual machine. 
+The Windows 10 machine utilizes Splunk to ingest logs to identify malicious traffic by the Kali machine, as well as Sysmon.
 
 # Table of Contents
 - [Setting up VirtualBox](#Setting-up-VirtualBox)
 - [Configuring the Windows machine](#Configuring-the-Windows-machine)
-- [Configuring the attacker machine](#Configuring-the-attacker-machine)
+- [Configuring the Attacker machine](#Configuring-the-attacker-machine)
 - [Implementing Splunk](#Implementing-Splunk)
 - [Configuring Sysmon](#Configuring-Sysmon)
 
@@ -23,14 +23,25 @@ This Lab utilizes Virtual Box as our hypervisor
 <img width="612" height="482" alt="image" src="https://github.com/user-attachments/assets/a44108be-aa82-4f5e-96a5-00d3810ee0e9" />
 
 # Configuring the Windows machine
-* Now that the hypervisor is installed, we can now install and configure the Windows 10 client, which simulates a business user
-* I will create a virtual machine for Windows by using the [media creation tool](https://www.microsoft.com/en-us/software-download/windows10)
+* Now that the hypervisor is installed, we can now install and configure the Windows 10 enterprise client, which simulates a business user
+* Normally, you would to access the evaluation [center](https://www.microsoft.com/en-us/evalcenter) to be able to retrieve enterprise ISO files
+* There is a work-around where you can have the media creation tool generate an ISO for a Windows 10 enterprise machine, to do this you can perform the following:
   
-You will create an installation media to make an ISO file
-<img width="792" height="252" alt="image" src="https://github.com/user-attachments/assets/c6f3431f-d441-4ab0-ada1-3ac75ea8147b" />
+* You will download the medial creation tool for Windows [10](https://www.microsoft.com/en-us/software-download/windows10)
+* For the work-around, I found a method on [youtube](https://www.youtube.com/watch?v=DR_75hjFFas), credit goes to [TimsComputerRepair](https://www.youtube.com/@TimsComputerRepair)
+* Now, the work-around involves the use of a powershell script in the same directory as the windows 10 media creation tool:
 
-Next, choose your settings for the installation media, I chose to keep the recommended options for my host machine
-<img width="782" height="421" alt="image" src="https://github.com/user-attachments/assets/e1787bb7-26cf-4e96-94ef-6b58535e8e08" />
+```Bash
+.\MediaCreationTool_22H2.exe /Eula Accept /Retail /MediaArch x64 /MediaLangCode en-US /MediaEdition Enterprise
+```
+Note: in the video, the edition of the Media Creation Tool is different, you can simply change the verion (e.g 22H2), and the script will execute
+In powershell as Administrator, navigate to the directory using the **cd** command in which you downloaded the media creation tool in
+<img width="962" height="263" alt="image" src="https://github.com/user-attachments/assets/242bf9ed-6c91-4006-ae91-f5676c35d159" />
+I can now use the script listed above to achieve the ability to retrieve an enterprise ISO
+
+Next, the Windows 10 Setup will now ask for a Product key, you can enter a generic key found on ten [forums](https://www.tenforums.com/tutorials/95922-generic-product-keys-install-windows-10-editions.html)
+<img width="790" height="696" alt="image" src="https://github.com/user-attachments/assets/ac06638b-88de-4122-b98e-5ec3c9912d7f" />
+All the product key does is allow you to use the edition
 
 With these settings, choose the option to create an ISO image to be used in VirtualBox
 <img width="788" height="351" alt="image" src="https://github.com/user-attachments/assets/6e8707c4-db68-40bb-8b92-0cbed2da7ced" />

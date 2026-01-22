@@ -47,16 +47,16 @@ Next, the Windows 10 Setup will now ask for a Product key, you can enter a gener
 All the product key does is allow you to use the edition
 
 Once you enter the generic retail key, you can create an ISO file
-<img width="776" height="697" alt="image" src="https://github.com/user-attachments/assets/fef58071-5641-4ffb-b8ce-f9caf7fc0940" />
+ <img width="776" height="697" alt="image" src="https://github.com/user-attachments/assets/fef58071-5641-4ffb-b8ce-f9caf7fc0940" />
 
-Here is a screenshot that demonstrates the successful creation of a Windows 10 ISO for our machine
+Above is a screenshot that demonstrates the successful creation of a Windows 10 ISO for our machine
 
 Now we are able to add the ISO to VirtualBox and create our Windows 10 client, I chose a generic name for our Business User
 Note: I skipped the unattended installation
 <img width="1736" height="407" alt="image" src="https://github.com/user-attachments/assets/1e834947-aed4-4c1b-8a60-3508a19d9c5f" />
 
  I've pre-allocated 4 GB of RAM, as well as 150 GB of space for the VM
-
+ 
 
   Choose the custom installation option, and begin the installation
   <img width="633" height="476" alt="image" src="https://github.com/user-attachments/assets/b8dda7fa-597a-4780-8efc-fd117dc50161" />

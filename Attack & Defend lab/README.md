@@ -60,8 +60,12 @@ Note: I skipped the unattended installation
 
   Choose the custom installation option, and begin the installation
   <img width="633" height="476" alt="image" src="https://github.com/user-attachments/assets/b8dda7fa-597a-4780-8efc-fd117dc50161" />
+ 
+  Once you reach the screen that asks you to sign in with a work or school account, you can simply click the option on the bottom left to Domain join
+  <img width="1022" height="767" alt="image" src="https://github.com/user-attachments/assets/770f912e-d5b3-4409-ad52-684de2fa5796" />
+  This lets you create a local account for that machine, and I entered simplified information to mimic a general business user
+  <img width="1021" height="721" alt="image" src="https://github.com/user-attachments/assets/cf83b68e-fe81-4f9b-a0be-8837716ee351" />
 
-  Choose the option for Windows 10 Pro, and ensure you choose the option have a local account
 
 For the security questions, I submitted dummy answers, and disabled the privacy settings
 <img width="1022" height="668" alt="image" src="https://github.com/user-attachments/assets/2ec45967-5727-4a32-966e-bb32b03f3459" />

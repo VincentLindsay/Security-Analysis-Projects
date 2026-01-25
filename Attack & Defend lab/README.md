@@ -76,6 +76,13 @@ This Lab utilizes Virtual Box as our hypervisor
 * Most importantly, I've taken a snapshot to revert back to if something goes wrong
 
   <img width="1512" height="140" alt="image" src="https://github.com/user-attachments/assets/ebce9f6d-a2fe-435d-a33d-7e16e41c526e" />
+* Additionally, I also disabled Windows updates through the modification of group policy
+<img width="395" height="198" alt="image" src="https://github.com/user-attachments/assets/1ac82ea1-3372-49ec-bccd-4a0ea30d6b59" />
+*  In group policy, you would navigate to Computer Configuration > Administrative Templates > Windows Components > Windows Update > Configure Automatic Updates
+<img width="1717" height="268" alt="image" src="https://github.com/user-attachments/assets/060e6c14-0d08-486a-acd5-fe3ccef881b5" />
+*  This should force Windows to stop sending the update packages, you can also disable the Service via **services.msc**
+  <img width="398" height="463" alt="image" src="https://github.com/user-attachments/assets/f41925cc-ce87-46d1-aa78-7e26bb684035" />
+ 
 * Now that we have successfully configure the Windows VM, we can now configure Splunk and Sysmon
 
 

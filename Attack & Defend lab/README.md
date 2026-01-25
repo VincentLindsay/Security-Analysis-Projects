@@ -76,8 +76,10 @@ This Lab utilizes Virtual Box as our hypervisor
   <img width="1512" height="140" alt="image" src="https://github.com/user-attachments/assets/ebce9f6d-a2fe-435d-a33d-7e16e41c526e" />
 * Additionally, I also disabled Windows updates through the modification of group policy
 <img width="395" height="198" alt="image" src="https://github.com/user-attachments/assets/1ac82ea1-3372-49ec-bccd-4a0ea30d6b59" />
+
 * In group policy, you would navigate to Computer Configuration > Administrative Templates > Windows Components > Windows Update > Configure Automatic Updates
 <img width="1717" height="268" alt="image" src="https://github.com/user-attachments/assets/060e6c14-0d08-486a-acd5-fe3ccef881b5" />
+
 * This should force Windows to stop sending the update packages, you can also disable the Service via **services.msc**
 
 <img width="398" height="463" alt="image" src="https://github.com/user-attachments/assets/f41925cc-ce87-46d1-aa78-7e26bb684035" />
@@ -107,8 +109,9 @@ This Lab utilizes Virtual Box as our hypervisor
 
 * A fresh install of a Kali VM looks like this:
 <img width="1918" height="982" alt="image" src="https://github.com/user-attachments/assets/52653fda-58b5-4c52-9b6f-7c657a6cea4b" />
+
 * Prior to conducting any simulated attacks, I updated and upgraded the packages using this command:
-  ```bash
+ ```bash
    sudo apt update && sudo apt upgrade -y
   ```
   
@@ -124,22 +127,24 @@ This Lab utilizes Virtual Box as our hypervisor
 
 * After this, splunk can begin to install, and you should get this page once Splunk is installed
 <img width="492" height="385" alt="image" src="https://github.com/user-attachments/assets/6cd2ef2c-2353-4cc7-8006-363ce447f58b" />
-* Once installed, you can login to Splunk using the credentials you entered when installing Splunk
-* Since we will be using Sysmon, we can also download the Splunk for Sysmon application on the Splunk dashboard
- <img width="965" height="625" alt="image" src="https://github.com/user-attachments/assets/108953b7-be4c-461b-bd48-d7f7fbe8cefa" />
-* To properly configure our machine to send logs to splunk, we must implement configuration settings
 
-* You will need to modify the local configuration file, which is located on a fresh in stall in the directory: C:\Program Files\Splunk\etc\system\default\inputs.conf
+* Once installed, you can login to Splunk using the credentials you entered when installing Splunk
+
+* Since we will be using Sysmon, we can also download the Splunk for Sysmon application on the Splunk dashboard
+<img width="965" height="625" alt="image" src="https://github.com/user-attachments/assets/108953b7-be4c-461b-bd48-d7f7fbe8cefa" />
+
+* To properly configure the windows machine to send system logs to splunk, we must implement configuration settings
+
+* You will need to modify the local configuration file, which is located on a fresh install in the directory:
+  ```
+  C:\Program Files\Splunk\etc\system\default\inputs.conf
+  ```
 * I copied and pasted the file onto the C:\Program Files\Splunk\etc\system\local directory
 <img width="711" height="226" alt="image" src="https://github.com/user-attachments/assets/2ed4718f-50bd-4074-8dca-98f75f320cdd" />
 
-* I Utilized MyDFIR's guide on how to create the additional configurations for (sysmon)[https://www.youtube.com/watch?v=-8X7Ay4YCoA&t=757s]
+* I Utilized MyDFIR's guide on how to create the additional configurations for (sysmon)(https://www.youtube.com/watch?v=-8X7Ay4YCoA&t=757s)
 * Here is an example of some of the configuration settings:
 <img width="651" height="533" alt="image" src="https://github.com/user-attachments/assets/33eec338-1eb8-449a-a2dd-5f5a933af191" />
-
-
-
-
 
 
 # Configuring Sysmon

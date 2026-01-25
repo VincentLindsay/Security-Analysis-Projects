@@ -58,10 +58,8 @@ Note: I skipped the unattended installation
  I've pre-allocated 4 GB of RAM, as well as 150 GB of space for the VM
  
 
-  Choose the custom installation option, and begin the installation
-  <img width="633" height="476" alt="image" src="https://github.com/user-attachments/assets/b8dda7fa-597a-4780-8efc-fd117dc50161" />
- 
-  Once you reach the screen that asks you to sign in with a work or school account, you can simply click the option on the bottom left to Domain join
+  Choose the custom installation option, and begin the installation based on your chosen partition
+  Once you reach the screen that asks you to sign in with a work or school account, you can simply click the option on the bottom left to domain join
   <img width="1022" height="767" alt="image" src="https://github.com/user-attachments/assets/770f912e-d5b3-4409-ad52-684de2fa5796" />
   This lets you create a local account for that machine, and I entered simplified information to mimic a general business user
   <img width="1021" height="721" alt="image" src="https://github.com/user-attachments/assets/cf83b68e-fe81-4f9b-a0be-8837716ee351" />
@@ -78,23 +76,23 @@ Now that we have successfully configure the Windows VM, we can now configure Spl
 
   
 # Configuring the attacker machine
-* I retrieved the ISO for the Kali machine by visiting the installer images [page](https://www.kali.org/get-kali/#kali-installer-images)
-* I chose the ISO image instead of a pre-built to have more control of the installation and configuration process
+I retrieved the ISO for the Kali machine by visiting the installer images [page](https://www.kali.org/get-kali/#kali-installer-images)
+I chose the ISO image instead of a pre-built to have more control of the installation and configuration process
 
-* Like the Windows machine setup, I skipped the unattended installation
+Like the Windows machine setup, I skipped the unattended installation
   <img width="1740" height="406" alt="image" src="https://github.com/user-attachments/assets/c2d4de9c-62c6-4c09-8e62-64051c6b6e79" />
-* I also allocated 2 GB of RAM, as well as 80 GB for the storage space for the Kali VM
+I also allocated 2 GB of RAM, as well as 80 GB for the storage space for the Kali VM
   <img width="1743" height="357" alt="image" src="https://github.com/user-attachments/assets/57a30ef7-35f2-4f18-9127-e6d85f2ec858" />
-* When booting the Kali machine, choose the graphical installation. I also chose the default hostname of kali
-* Choose the credentials you want and use the Guided Partition to use the entire disk
+When booting the Kali machine, choose the graphical installation. I also chose the default hostname of kali
+Choose the credentials you want and use the Guided Partition to use the entire disk
   <img width="798" height="598" alt="image" src="https://github.com/user-attachments/assets/78b0b7aa-5a6f-4ca5-b7ab-0eb3ad5fe961" />
-* Keep all files in one partition and choose the default software selection
+Keep all files in one partition and choose the default software selection
   <img width="797" height="603" alt="image" src="https://github.com/user-attachments/assets/ab9344da-98d3-4f2f-bfbb-3668995af604" />
-* Install GRUB, and have it set to the /dev/sda directory
+Install GRUB, and have it set to the /dev/sda directory
   <img width="801" height="527" alt="image" src="https://github.com/user-attachments/assets/0a4223e6-4d17-4299-a152-14a0185fb6e5" />
-* A fresh install of a Kali VM looks like this:
+A fresh install of a Kali VM looks like this:
   <img width="1918" height="982" alt="image" src="https://github.com/user-attachments/assets/52653fda-58b5-4c52-9b6f-7c657a6cea4b" />
-* Prior to conducting any simulated attacks, I updated the packages using this command:
+Prior to conducting any simulated attacks, I updated the packages using this command:
   ```bash
    sudo apt update
   ```

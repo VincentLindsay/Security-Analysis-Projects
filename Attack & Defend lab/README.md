@@ -163,7 +163,24 @@ This Lab utilizes Virtual Box as our hypervisor
 * We will utilize the popular olaf configuration [settings](https://github.com/olafhartong/sysmon-modular/blob/master/sysmonconfig.xml)
 * On the github page, navigate towards the sysmonconfig.xml file
 * Click the raw option and save the file to the folder that Sysmon belongs to
-* Open a PowerShell window as Administrator
+* Extract the Sysmon folder, and open Powershell as admin
+* Navigate to the directory that Sysmon is located in
+<img width="762" height="100" alt="image" src="https://github.com/user-attachments/assets/cc4d7f4f-3dda-4049-9429-6c9ae60e0579" />
+* Move the configuration file to the directory that Sysmon is located in
+<img width="737" height="243" alt="image" src="https://github.com/user-attachments/assets/f9f1df7f-a79b-4833-ad50-f797dc324082" />
+* Now that we have the configuration file with Sysmon, we will execute the following command
+  ```
+  .\sysmon64.exe -i .\sysmonconfig.xml
+  ```
+* This command allows Sysmon to install the custom configuration file
+<img width="1130" height="238" alt="image" src="https://github.com/user-attachments/assets/c4f04726-3c89-492b-9cce-b05728871fdd" />
+* After running the command, Sysmon is now installed and configuration with our custom configuration file
+* We have now sucessfully installed Sysmon
+<img width="950" height="262" alt="image" src="https://github.com/user-attachments/assets/479a85c8-29b4-4259-a713-96b5a7a15003" />
+
+
+
+
 
 
 

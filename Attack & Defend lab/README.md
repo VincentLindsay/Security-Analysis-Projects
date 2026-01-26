@@ -150,6 +150,9 @@ This Lab utilizes Virtual Box as our hypervisor
   <img width="358" height="273" alt="image" src="https://github.com/user-attachments/assets/3a63076a-729e-4373-bf39-21358d113625" />
 * Now we will create a new index on Splunk that represents the Windows machine so that system logs are properly ingested
   <img width="577" height="273" alt="image" src="https://github.com/user-attachments/assets/dbd1277f-f707-4f93-9098-3d3119458893" />
+* After some time, the logs are now successfully ingested into splunk
+  <img width="1712" height="661" alt="image" src="https://github.com/user-attachments/assets/352d4f39-9422-461b-85bb-532604146136" />
+
 * Now Splunk is successfully configured
 
 

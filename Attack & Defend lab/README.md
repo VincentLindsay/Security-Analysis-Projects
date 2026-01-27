@@ -84,6 +84,12 @@ This Lab utilizes Virtual Box as our hypervisor
 * This should force Windows to stop sending the update packages, you can also disable the Service via **services.msc**
 
 <img width="398" height="463" alt="image" src="https://github.com/user-attachments/assets/f41925cc-ce87-46d1-aa78-7e26bb684035" />
+* I also disabled Windows defender using group policy edit
+* To access the ability to turn off Windows Defender, you would navigate to: Computer Configuration > Administrative Templates > Windows Components > Microsoft Defender Anti-Virus > Turn off Microsoft Defender Anti-Virus 
+<img width="686" height="635" alt="image" src="https://github.com/user-attachments/assets/246eea7f-c2c9-4a74-a5bb-8088344e629b" />
+* I also turned off tamper protection in Windows security as well
+<img width="583" height="190" alt="image" src="https://github.com/user-attachments/assets/28fd86ce-122f-446a-8428-2d250105906c" />
+
  
 * Now that we have successfully configure the Windows VM, we can now configure Splunk and Sysmon
 

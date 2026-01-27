@@ -186,7 +186,17 @@ This Lab utilizes Virtual Box as our hypervisor
 
 
 # Creating the simulated attack
-* On our Kali machine, we will conduct the following:
+* Prior to conducting any attack, It is important to identify the ip address of our windows machine in this hypothetical scenario
+* This will be achieved using the **ipconfig** command in a terminal
+* This will be helpful for conducting network scanning using **nmap** on the kali machine
+* Now that we know the Victim's IP address, we can now peform more reconnaissance using nmap in the following command string
+  ```
+  nmap -sV 192.168.190.129 -Pn
+  ```
+* This command conducts a scan of any potential open ports (Option -sV) of the Windows machine, and does not use any ICMP Pings (Option -Pn)
+* As a result, we noticed that port 3389 (Remote Desktop Protocol) was enabled
+<img width="691" height="112" alt="image" src="https://github.com/user-attachments/assets/3875f5cc-f0bf-4111-a515-86210f7419d1" />
+
 
 
 

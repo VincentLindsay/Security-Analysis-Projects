@@ -8,6 +8,7 @@ The Windows 10 machine utilizes Splunk to ingest logs to identify malicious traf
 - [Configuring the Attacker machine](#Configuring-the-Attacker-machine)
 - [Implementing Splunk](#Implementing-Splunk)
 - [Configuring Sysmon](#Configuring-Sysmon)
+- [Creating the simulated attack](#Creating-the-simluated-attack)
 
 
 ## Setting up VirtualBox
@@ -180,6 +181,13 @@ This Lab utilizes Virtual Box as our hypervisor
 * After running the command, Sysmon is now installed and configuration with our custom configuration file
 * We have now sucessfully installed Sysmon, and are now ready to simulate an attacker's actions such as the creation of a phishing document
   <img width="950" height="262" alt="image" src="https://github.com/user-attachments/assets/479a85c8-29b4-4259-a713-96b5a7a15003" />
+* After some time, the Sysmon logs were successfully ingested into splunk; In the following screenshot, I opened task manager to show that the logs are being properly ingested
+  <img width="1711" height="515" alt="image" src="https://github.com/user-attachments/assets/6fd46d56-5936-49b6-a6b3-b0882423412e" />
+
+
+
+  # Creating the simulated attack
+
 
 
 

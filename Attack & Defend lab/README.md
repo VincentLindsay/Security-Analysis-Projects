@@ -8,7 +8,7 @@ The Windows 10 machine utilizes Splunk to ingest logs to identify malicious traf
 - [Configuring the Attacker machine](#Configuring-the-Attacker-machine)
 - [Implementing Splunk](#Implementing-Splunk)
 - [Configuring Sysmon](#Configuring-Sysmon)
-- [Creating the simulated attack](#Creating-the-simulated-attack)
+- [Conducting the simulated attack](#Conducting-the-simulated-attack)
 
 
 ## Setting up VirtualBox
@@ -185,7 +185,7 @@ This Lab utilizes Virtual Box as our hypervisor
   <img width="1711" height="515" alt="image" src="https://github.com/user-attachments/assets/6fd46d56-5936-49b6-a6b3-b0882423412e" />
 
 
-# Creating the simulated attack
+# Conducting the simulated attack
 * Prior to conducting any attack, It is important to identify the ip address of our windows machine in this hypothetical scenario
 * This will be achieved using the **ipconfig** command in a terminal
 * This will be helpful for conducting network scanning using **nmap** on the kali machine

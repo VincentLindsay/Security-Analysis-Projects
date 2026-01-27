@@ -187,6 +187,7 @@ This Lab utilizes Virtual Box as our hypervisor
 
 
   # Creating the simulated attack
+  * On our Kali machine, we will conduct the following:
 
 
 

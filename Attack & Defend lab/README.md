@@ -236,6 +236,17 @@ This Lab utilizes Virtual Box as our hypervisor
   <img width="593" height="52" alt="image" src="https://github.com/user-attachments/assets/df5fdaf8-a52b-458a-b7ca-0e3e0abe28dd" />
 *  On the Windows machine, I acessed the kali machine's http server through the IP address and the respective port (9999)
   <img width="1718" height="217" alt="image" src="https://github.com/user-attachments/assets/dfe53706-038e-4cea-becb-af4c1182681f" />
+* I turned off defender smartscreen to be able to download the file
+  <img width="827" height="126" alt="image" src="https://github.com/user-attachments/assets/54b721f2-ea71-4aec-8526-24f780c6d769" />
+* I was able to download the file, and without file extensions enabled, It looks like a PDF file
+  <img width="786" height="168" alt="image" src="https://github.com/user-attachments/assets/4dd72988-a013-4784-990d-53a95bb70d5e" />
+* Now with the malware executed, we can verify infection using **netstat -anob**
+  <img width="682" height="32" alt="image" src="https://github.com/user-attachments/assets/88e56d1e-2c10-4d7e-9abe-69cc523bcab3" />
+* This command with the given options shows all connections, and any files associated with a network connection
+* 
+
+
+
   
 
 

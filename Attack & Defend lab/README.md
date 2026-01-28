@@ -243,19 +243,22 @@ This Lab utilizes Virtual Box as our hypervisor
 * Now with the malware executed, we can verify infection using **netstat -anob**
   <img width="682" height="32" alt="image" src="https://github.com/user-attachments/assets/88e56d1e-2c10-4d7e-9abe-69cc523bcab3" />
 * This command with the given options shows all connections, and any files associated with a network connection
-* 
-
-
-
-  
-
-
-
 
 
 
 # Analyzing the attack 
-       
+*  Now that the attack has been simulated, we can now analyze the fragments using Splunk
+*  From above, we know that the respective process associated with the malware has an id of **7108**
+* When using the following splunk query, we can see the following events associated with the **ClickME.pdf.exe** file's execution
+```
+index="endpoint" ClickME.pdf.exe
+```
+<img width="1703" height="487" alt="image" src="https://github.com/user-attachments/assets/b66b3a9a-eefd-4bb1-9d18-604f5364ce6f" />
+* I can now verify that there was an execution of a malicious file with command and control (C2) capability 
+* When using additional splunk queries that follow event code 1116 which pertains to Windows Defender, we can verify that the file was executed
+<img width="1435" height="632" alt="image" src="https://github.com/user-attachments/assets/cc6bf039-762f-440d-89da-5b7baede504f" />
+* This screen shot shows valuable fragments like a process ID, as well as the source IP address and port number
+
 
 
 

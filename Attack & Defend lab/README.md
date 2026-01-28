@@ -258,8 +258,21 @@ index="endpoint" ClickME.pdf.exe
 * When using additional splunk queries that follow event code 1116 which pertains to Windows Defender, we can verify that the file was executed
 <img width="1435" height="632" alt="image" src="https://github.com/user-attachments/assets/cc6bf039-762f-440d-89da-5b7baede504f" />
 * This screen shot shows valuable fragments like a process ID, as well as the source IP address and port number
+* Now we can discuss the steps of remidiating this attack, as well as providing recommendations
 
+# Remediating the attack
+* Defensively speaking, a major question would be is why was the file executed?
+* Let's assume in this scenario, that the malicious file was executed due to phishing
+* We can not simply delete the file and kill the process since the machine was infected by malware with C2 infrastructure
+* Even if we kill the respective process, the threat actor can still attempt to retry their C2 infrastructure
+<img width="856" height="435" alt="image" src="https://github.com/user-attachments/assets/15cbe615-e7fc-4576-847a-51543ded0355" />
+* We can attempt to remediate, and we would start with the following:
+    *  The machine's internet connection would be disconnected and isolated from the internal network
+    *  The process associated with the file (ClickME.exe) would be deleted
+    *  Using a firewall, we can use ingress rules to block any traffic from the malicious IP address
+* In the future, an Intrusion Dection System could be deployed to identify that a malicious action occured due to the opening of a file.
 
+* Further projects using these virtual machines will involve the Implementation of an IDS/IPS, as well as the development of a firewall
 
 
 

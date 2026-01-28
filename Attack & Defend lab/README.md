@@ -224,8 +224,23 @@ This Lab utilizes Virtual Box as our hypervisor
 
 * This command creates our reverse shell using our kali machine as the local host, as well as using HTTPS (Port 443) as the local port. It also creates an executable file that contains two file extensions
   *  Note: the default local port for a meterpreter shell is 4444, but I want to experiment with a different port
-*  We can verify the file was creating using **ls**
+*  We can verify the file was created using **ls**
   <img width="572" height="76" alt="image" src="https://github.com/user-attachments/assets/ae23d5e1-7cc2-4052-b053-ac6d633cb960" />
+*  Now that the file was created for our attack, we can now add this custom exploit to metasploit, and attempt the attack
+*  In metasploit, we will set our payload to be **windows/x64/meterpreter/reverse_tcp**
+  <img width="643" height="61" alt="image" src="https://github.com/user-attachments/assets/26a3c3bd-d7ec-4390-8e28-5a5f2eb3dae1" />
+* I changed the local execution host to be the same IP address as the kali machine, as well as the changing of the local port to be 443
+  <img width="821" height="262" alt="image" src="https://github.com/user-attachments/assets/d75dd0dc-79de-4aa2-bb88-62174667c08f" />
+* We are now able to conduct the simulated attack on the Windows machine once we configure a basic http server using python3
+  <img width="755" height="47" alt="image" src="https://github.com/user-attachments/assets/2573282b-a89e-45ef-a0ee-ad5fb60800c1" />
+  <img width="593" height="52" alt="image" src="https://github.com/user-attachments/assets/df5fdaf8-a52b-458a-b7ca-0e3e0abe28dd" />
+*  On the Windows machine, I acessed the kali machine's http server through the IP address and the respective port (9999)
+  <img width="1718" height="217" alt="image" src="https://github.com/user-attachments/assets/dfe53706-038e-4cea-becb-af4c1182681f" />
+  
+
+
+
+
 
 
 # Analyzing the attack 

@@ -282,6 +282,7 @@ index="endpoint" ClickME.pdf.exe
     *  The process associated with the file (ClickME.exe) would be deleted
     *  Using a firewall, we can use ingress rules to block any traffic from the malicious IP address
 * In the future, an Intrusion Dection System could be deployed to identify that a malicious action occured due to the opening of a file.
+* Moreover, ensuring that Windows Defender or any sort of anti-malware can at least mitigate the liklihood of infection along with the use of software like Defender SmartScreen
 
 * Further projects using these virtual machines will involve the Implementation of an IDS/IPS, as well as the development of a firewall
 

@@ -9,7 +9,8 @@ The Windows 10 machine utilizes Splunk to ingest logs to identify malicious traf
 - [Implementing Splunk](#Implementing-Splunk)
 - [Configuring Sysmon](#Configuring-Sysmon)
 - [Conducting the simulated attack](#Conducting-the-simulated-attack)
-- [Analyzing the attack](#Analyzing-the-attack) 
+- [Analyzing the attack](#Analyzing-the-attack)
+- [Remediating the attack](#Remediating-the-attack)
 
 
 ## Setting up VirtualBox
@@ -226,22 +227,29 @@ This Lab utilizes Virtual Box as our hypervisor
   *  Note: the default local port for a meterpreter shell is 4444, but I want to experiment with a different port
 *  We can verify the file was created using **ls**
   <img width="572" height="76" alt="image" src="https://github.com/user-attachments/assets/ae23d5e1-7cc2-4052-b053-ac6d633cb960" />
+
 *  Now that the file was created for our attack, we can now add this custom exploit to metasploit, and attempt the attack
 *  In metasploit, we will set our payload to be **windows/x64/meterpreter/reverse_tcp**
+
   <img width="643" height="61" alt="image" src="https://github.com/user-attachments/assets/26a3c3bd-d7ec-4390-8e28-5a5f2eb3dae1" />
 * I changed the local execution host to be the same IP address as the kali machine, as well as the changing of the local port to be 443
   <img width="821" height="262" alt="image" src="https://github.com/user-attachments/assets/d75dd0dc-79de-4aa2-bb88-62174667c08f" />
 * We are now able to conduct the simulated attack on the Windows machine once we configure a basic http server using python3
   <img width="755" height="47" alt="image" src="https://github.com/user-attachments/assets/2573282b-a89e-45ef-a0ee-ad5fb60800c1" />
   <img width="593" height="52" alt="image" src="https://github.com/user-attachments/assets/df5fdaf8-a52b-458a-b7ca-0e3e0abe28dd" />
+
 *  On the Windows machine, I acessed the kali machine's http server through the IP address and the respective port (9999)
   <img width="1718" height="217" alt="image" src="https://github.com/user-attachments/assets/dfe53706-038e-4cea-becb-af4c1182681f" />
+
 * I turned off defender smartscreen to be able to download the file
   <img width="827" height="126" alt="image" src="https://github.com/user-attachments/assets/54b721f2-ea71-4aec-8526-24f780c6d769" />
+
 * I was able to download the file, and without file extensions enabled, It looks like a PDF file
   <img width="786" height="168" alt="image" src="https://github.com/user-attachments/assets/4dd72988-a013-4784-990d-53a95bb70d5e" />
+
 * Now with the malware executed, we can verify infection using **netstat -anob**
   <img width="682" height="32" alt="image" src="https://github.com/user-attachments/assets/88e56d1e-2c10-4d7e-9abe-69cc523bcab3" />
+
 * This command with the given options shows all connections, and any files associated with a network connection
 
 
@@ -249,14 +257,16 @@ This Lab utilizes Virtual Box as our hypervisor
 # Analyzing the attack 
 *  Now that the attack has been simulated, we can now analyze the fragments using Splunk
 *  From above, we know that the respective process associated with the malware has an id of **7108**
-* When using the following splunk query, we can see the following events associated with the **ClickME.pdf.exe** file's execution
+*  When using the following splunk query, we can see the following events associated with the **ClickME.pdf.exe** file's execution
 ```
 index="endpoint" ClickME.pdf.exe
 ```
-<img width="1703" height="487" alt="image" src="https://github.com/user-attachments/assets/b66b3a9a-eefd-4bb1-9d18-604f5364ce6f" />
+  <img width="1703" height="487" alt="image" src="https://github.com/user-attachments/assets/b66b3a9a-eefd-4bb1-9d18-604f5364ce6f" />
+
 * I can now verify that there was an execution of a malicious file with command and control (C2) capability 
 * When using additional splunk queries that follow event code 1116 which pertains to Windows Defender, we can verify that the file was executed
-<img width="1435" height="632" alt="image" src="https://github.com/user-attachments/assets/cc6bf039-762f-440d-89da-5b7baede504f" />
+  <img width="1435" height="632" alt="image" src="https://github.com/user-attachments/assets/cc6bf039-762f-440d-89da-5b7baede504f" />
+
 * This screen shot shows valuable fragments like a process ID, as well as the source IP address and port number
 * Now we can discuss the steps of remidiating this attack, as well as providing recommendations
 
@@ -265,7 +275,8 @@ index="endpoint" ClickME.pdf.exe
 * Let's assume in this scenario, that the malicious file was executed due to phishing
 * We can not simply delete the file and kill the process since the machine was infected by malware with C2 infrastructure
 * Even if we kill the respective process, the threat actor can still attempt to retry their C2 infrastructure
-<img width="856" height="435" alt="image" src="https://github.com/user-attachments/assets/15cbe615-e7fc-4576-847a-51543ded0355" />
+  <img width="856" height="435" alt="image" src="https://github.com/user-attachments/assets/15cbe615-e7fc-4576-847a-51543ded0355" />
+
 * We can attempt to remediate, and we would start with the following:
     *  The machine's internet connection would be disconnected and isolated from the internal network
     *  The process associated with the file (ClickME.exe) would be deleted

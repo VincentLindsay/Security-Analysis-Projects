@@ -246,15 +246,19 @@ This Lab utilizes Virtual Box as our hypervisor
 
 * I was able to download the file, and without file extensions enabled, It looks like a PDF file
   <img width="786" height="168" alt="image" src="https://github.com/user-attachments/assets/4dd72988-a013-4784-990d-53a95bb70d5e" />
+  <img width="722" height="235" alt="image" src="https://github.com/user-attachments/assets/8c401fc1-f46a-4e36-a65c-422ec2cee521" />
+* From the attacker's point of view, we can see that the user on the Windows machine sucessfully downloaded the file through the terminal output of the http server
+  
 
+* We can also see that the reverse shell was created
+  <img width="803" height="88" alt="image" src="https://github.com/user-attachments/assets/59610826-bd05-4775-8b91-e86fe66fda44" />
+
+# Analyzing the attack 
 * Now with the malware executed, we can verify infection using **netstat -anob**
   <img width="682" height="32" alt="image" src="https://github.com/user-attachments/assets/88e56d1e-2c10-4d7e-9abe-69cc523bcab3" />
 
 * This command with the given options shows all connections, and any files associated with a network connection
 
-
-
-# Analyzing the attack 
 *  Now that the attack has been simulated, we can now analyze the fragments using Splunk
 *  From above, we know that the respective process associated with the malware has an id of **7108**
 *  When using the following splunk query, we can see the following events associated with the **ClickME.pdf.exe** file's execution
